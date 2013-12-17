@@ -1,18 +1,9 @@
-#!/usr/bin/evn node
+#!/usr/bin/env node
 
+var mongo = require('mongoskin'),
+    mongoUri = process.env.MONGOLAB_URI || process.env.MONGOLAB_URL || 'mongodb://localhost:27017/ranks';
 
-var express = require('express');
-
-
-var app = express();
-app.use(express.logger());
-
-
-app.get('/', function(req, res) {
-    res.send('hello world');
-});
-
-
+var app = require('../lib');
 
 var port = process.env.PORT || 8080;
 
