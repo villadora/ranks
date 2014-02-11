@@ -1,42 +1,45 @@
 {
-    "name": "ranks-server",
-    "version": "0.0.0",
-    "description": "",
-    "main": "index.js",
-    "bin": {
-        "ranks-server": "bin/server.js"
-    },
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "repository": "",
-    "keywords": [
-        "nodejs", "rank", "libraries", "npm"
-    ],
-    "dependencies": {
-        "express": "3.x",
-        "npm": "",
-        "mongoskin": "",
-        "lru-cache": "",
-        "neo4j": ""
-    },
-    "bundleDependencies": {
-        "express":""
-    },
-    "devDependencies": {
-        "grunt": "~0.4.1",
-        "jshint": "~2.1.9",
-        "mocha": "~1.12.0",
-        "chai": "~1.7.2",
-        "async": "~0.2.9",
-        "grunt-contrib-jshint": "0.3.x",
-        "grunt-contrib-clean": "0.4.x",
-        "grunt-contrib-watch": "0.3.x"
-    },
-    "engines": {
-        "node": "0.10.x"
-    },
-    "readmeFilename": "README.md",
-    "author": "wei.gao",
-    "license": "MIT"
+  "name": "ranks-server",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "ranks-server": "bin/server.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "",
+  "keywords": [
+    "nodejs",
+    "rank",
+    "libraries",
+    "npm"
+  ],
+  "dependencies": {
+    "express": "~3.4.4",
+    "npm": "~1.3.13",
+    "mongoskin": "~0.6.0",
+    "lru-cache": "~2.3.1",
+    "neo4j": "~1.0.0",
+    "modified": "~2.1.9",
+    "request": "~2.33.0",
+    "underscore": "~1.5.2"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "jshint": "~2.1.9",
+    "mocha": "~1.12.0",
+    "chai": "~1.7.2",
+    "async": "~0.2.9",
+    "grunt-contrib-jshint": "0.3.x",
+    "grunt-contrib-clean": "0.4.x",
+    "grunt-contrib-watch": "0.3.x"
+  },
+  "engines": {
+    "node": "0.10.x"
+  },
+  "readmeFilename": "README.md",
+  "author": "wei.gao",
+  "license": "MIT"
 }
