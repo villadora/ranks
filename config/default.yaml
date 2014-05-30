@@ -1,0 +1,5 @@
+Sync:
+  batch-size: 100
+  interval: 60000
+  regtistry: http://registry.npmjs.org
+  neo4j: http://localhost:7474
