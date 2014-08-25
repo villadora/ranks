@@ -2,7 +2,7 @@
 /* global: describe, it */
 
 describe('elasticsearch client', function() {
-  var client = require('../lib/elastic');
+  var client = require('../lib').elastic;
   it('ping', function(done) {
     client.ping({
       // ping usually has a 100ms timeout
