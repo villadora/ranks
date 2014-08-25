@@ -29,7 +29,7 @@
 # Cluster name identifies your cluster for auto-discovery. If you're running
 # multiple clusters on the same network, make sure you're using unique names.
 #
-cluster.name: elasticsearch_ranks
+cluster.name: ranks
 
 
 #################################### Node #####################################
@@ -102,7 +102,7 @@ cluster.name: elasticsearch_ranks
 
 # Set the number of shards (splits) of an index (5 by default):
 #
-# index.number_of_shards: 5
+# index.number_of_shards: 2
 
 # Set the number of replicas (additional copies) of an index (1 by default):
 #
@@ -111,8 +111,8 @@ cluster.name: elasticsearch_ranks
 # Note, that for development on a local machine, with small indices, it usually
 # makes sense to "disable" the distributed features:
 #
-# index.number_of_shards: 1
-# index.number_of_replicas: 0
+index.number_of_shards: 1
+index.number_of_replicas: 0
 
 # These settings directly affect the performance of index and search operations
 # in your cluster. Assuming you have enough machines to hold shards and
@@ -219,7 +219,7 @@ network.host: 127.0.0.1
 
 # Set a custom port to listen for HTTP traffic:
 #
-# http.port: 9200
+http.port: 9301
 
 # Set a custom allowed content length:
 #

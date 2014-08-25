@@ -1,0 +1,13 @@
+sync:
+  batch-size: 10
+  interval: 1 # sync interval in seconds
+  registry: http://registry.npmjs.org
+
+elasticsearch:
+  host: "localhost:9301"
+  log: "trace"
+
+
+log:
+  level: debug
+  

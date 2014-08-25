@@ -7,8 +7,8 @@
     "ranks-server": "bin/server.js"
   },
   "scripts": {
-    "lint" : "./node_modules/.bin/jshint *.json bin/*.js lib/**/*.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "./node_modules/.bin/jshint *.json bin/*.js lib/**/*.js",
+    "test": "./node_modules/.bin/mocha -R spec"
   },
   "repository": "",
   "keywords": [
@@ -19,16 +19,12 @@
   ],
   "dependencies": {
     "async": "~0.2.9",
+    "bunyan": "^1.0.0",
     "cayley": "^0.2.0",
     "config": "^0.4.37",
-    "couch-db": "^1.0.6",
-    "koa": "^0.5.5",
-    "koa-trie-router": "^1.0.5",
     "lru-cache": "~2.3.1",
-    "modified": "~2.1.9",
-    "neo4j": "^1.0.0",
-    "request": "~2.33.0",
-    "underscore": "~1.5.2",
+    "request": "^2.33.0",
+    "underscore": "^1.5.2",
     "yaml": "^0.2.3"
   },
   "devDependencies": {
