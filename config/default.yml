@@ -1,12 +1,16 @@
+registry: http://registry.npmjs.org
+
+
 sync:
-  batch-size: 100
-  interval: 1000 # sync interval in seconds
-  registry: http://registry.npmjs.org
-  concurrency: 20
+  batch-size: 200
+  batch-delay: 1000
+  interval: 1 # sync interval in seconds
+  concurrency: 10
   max-queue-size: 1000
   
 elasticsearch:
-  host: "localhost:9301"
+  host: "http://localhost:9200"
+  index: 'npm'
   log: "trace"
 
 
