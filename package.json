@@ -23,8 +23,10 @@
     "bunyan": "^1.0.0",
     "cayley": "^0.2.0",
     "config": "^0.4.37",
+    "couch-db": "^1.1.3",
     "lru-cache": "~2.3.1",
     "request": "^2.33.0",
+    "retry": "^0.6.1",
     "underscore": "^1.5.2",
     "yaml": "^0.2.3"
   },
