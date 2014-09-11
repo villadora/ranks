@@ -1,19 +1,17 @@
-registry: http://registry.npmjs.org
-
-
 sync:
-  batch-size: 200
-  batch-delay: 1000
-  interval: 1 # sync interval in seconds
+  interval: 1000 
   concurrency: 10
-  max-queue-size: 1000
+  max-queue-size: 2
   
 elasticsearch:
   host: "http://localhost:9200"
-  index: 'npm'
-  log: "trace"
+  index: "npm"
+  log: "error"
 
+
+  registry: "http://registry.npmjs.org"
+couchdb: "https://skimdb.npmjs.com/registry"
 
 log:
-  level: debug
+  level: "info"
   
