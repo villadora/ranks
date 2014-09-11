@@ -362,3 +362,7 @@ network.host: 127.0.0.1
 #monitor.jvm.gc.ConcurrentMarkSweep.warn: 10s
 #monitor.jvm.gc.ConcurrentMarkSweep.info: 5s
 #monitor.jvm.gc.ConcurrentMarkSweep.debug: 2s
+
+
+
+script.disable_dynamic: false
