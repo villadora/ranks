@@ -4,15 +4,15 @@
 describe('elasticsearch client', function() {
   var client = require('../lib').elastic;
 
-  it.only('getDependents', function(done) {
+  it('getDependents', function(done) {
     client.getDependents('colors', function(err, dependents) {
       console.log(dependents);
       done(err);
     });
   });
 
-  it('sumScore', function(done) {
-    client.sumScore(['Reston', 'daemon-tools'], function(err, score) {
+  it('getScore', function(done) {
+    client.getScores(['Reston', 'daemon-tools'], function(err, score) {
       console.log(score);
       done(err);
     });
